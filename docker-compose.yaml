@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   postgres:
-    container_name: scheduling
+    container_name: 
     image: postgres
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=scheduling
-      - POSTGRES_PASSWORD=scheduling
-      - POSTGRES_DB=scheduling
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=
       - PGDATA=/data/postgres
     volumes:
       - ./data/pg:/data/postgres
